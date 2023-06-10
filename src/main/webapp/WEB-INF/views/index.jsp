@@ -10,14 +10,66 @@
 </head>
 <style>
 
-    h1{
-        background-color: green;
+    body{
+        margin: 0px;
+        padding: 0px;
     }
+
+    .all_place{
+        width: 100%;
+        height: 100%;
+    }
+
+    .menu_bar {
+        width: 100%;
+        height: 50px;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: relative;
+        z-index: 1;
+    }
+
+    .menu_title{
+        left: 5%;
+        width:120px;
+        height:50px;
+        position: absolute;
+        background-color: white;
+    }
+
+    .menu_icon{
+        right: 10%;
+        width:50px;
+        height:50px;
+        position: absolute;
+        background-color: white;
+    }
+
+    .main_img_place {
+        width: 100%;
+        height: 700px;
+        background-color: red;
+        position: relative;
+        z-index: 0;
+    }
+
 
 </style>
 <body>
 
-<h1>index덕동리</h1>
+<div class="all_place"><%--전체 공간--%>
+
+    <div class="menu_bar"><%--메뉴바--%>
+        <div class="menu_title">덕동리 208 캠핑장</div><%--메뉴바 제목--%>
+        <div class="menu_icon"></div>
+    </div>
+
+    <div class="main_img_place"><%--메인 이미지 공간--%>
+        <img src="/img/main_img_1.jpg">
+    </div>
+
+</div>
+
+
 
 
 </body>
