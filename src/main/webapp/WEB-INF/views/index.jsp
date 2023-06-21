@@ -10,65 +10,93 @@
 </head>
 <style>
 
-    body{
-        margin: 0px;
-        padding: 0px;
+    body {
+        margin: 0;
+        padding: 0;
     }
 
-    .all_place{
-        width: 100%;
-        height: 100%;
+    .main-header {
+        position: relative;
+        height: 900px; /* 메인 이미지 높이 조정 */
     }
 
-    .menu_bar {
+    .menu {
         width: 100%;
-        height: 50px;
+        text-align: center;
         background-color: rgba(0, 0, 0, 0.5);
-        position: relative;
-        z-index: 1;
-    }
-
-    .menu_title{
-        left: 5%;
-        width:120px;
-        height:50px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
         position: absolute;
-        background-color: white;
+        top: 20px; /* 메뉴바 수직 정렬 */
+        left: 50%; /* 메뉴바 수평 정렬 */
+        transform: translate(-50%, -50%);
+        z-index: 1; /* 메뉴바가 메인 이미지 위에 나타나도록 설정 */
     }
 
-    .menu_icon{
-        right: 10%;
-        width:50px;
-        height:50px;
-        position: absolute;
-        background-color: white;
+    .menu li {
+        display: inline-block;
+        margin-right: 10px;
     }
 
-    .main_img_place {
-        width: 100%;
-        height: 700px;
-        background-color: red;
+    .menu li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .menu li a:hover {
+        font-weight: bold;
+    }
+
+    .main-image {
         position: relative;
-        z-index: 0;
+        height: 100%;
+        background-image: url("img/main_img_1.jpg");
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
     }
+
+    .main-image h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .main-image p {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
 
 
 </style>
 <body>
 
-<div class="all_place"><%--전체 공간--%>
-
-    <div class="menu_bar"><%--메뉴바--%>
-        <div class="menu_title">덕동리 208 캠핑장</div><%--메뉴바 제목--%>
-        <div class="menu_icon"></div>
+<header class="main-header">
+    <nav>
+        <ul class="menu">
+            <li><a href="">홈</a></li>
+            <li><a href="#">소개</a></li>
+            <li><a href="#">시설안내</a></li>
+            <li><a href="#">오시는길</a></li>
+            <li><a href="#">고객센터</a></li>
+        </ul>
+    </nav>
+    <div class="main-image">
+        <h1>Welcome to Our 208 Camping</h1>
+        <p>I AM BABY DORI</p>
     </div>
+</header>
 
-    <div class="main_img_place"><%--메인 이미지 공간--%>
-        <img src="/img/main_img_1.jpg">
-    </div>
 
-</div>
-
+<div class="test">test</div>
 
 
 
