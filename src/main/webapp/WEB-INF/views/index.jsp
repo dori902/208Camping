@@ -17,7 +17,8 @@
 
     .main-header {
         position: relative;
-        height: 900px; /* 메인 이미지 높이 조정 */
+        height: 700px; /* 메인 이미지 높이 조정 */
+        background-color: green;
     }
 
     .menu {
@@ -51,29 +52,49 @@
         font-weight: bold;
     }
 
-    .main-image {
+    .main-image { /*메인 이미지 공간*/
         position: relative;
         height: 100%;
         background-image: url("img/main_img_1.jpg");
-        background-size: cover;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-        color: #fff;
+        color: white;/*글자 색*/
+        background-color: red;
     }
 
-    .main-image h1 {
+    .main-image h1 { /*메인 이미지 제목*/
         font-size: 36px;
-        margin-bottom: 20px;
-    }
-
-    .main-image p {
-        font-size: 18px;
         margin-bottom: 40px;
     }
 
+    .main-image p { /*메인 이미지 텍스트*/
+        font-size: 18px;
+    }
+
+    .introduction_place{/*캠핑장 소개 공간*/
+        background-color: antiquewhite;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .main_text{
+        text-align: center;
+    }
+
+    .introduction_img{
+        background-color: red;
+
+        margin-left: 10%;
+        width: 200px;
+        height: 200px;
+        float: left
+    }
 
 
 </style>
@@ -90,13 +111,31 @@
         </ul>
     </nav>
     <div class="main-image">
-        <h1>Welcome to Our 208 Camping</h1>
+        <h1>Welcome to 208 Camping</h1>
         <p>I AM BABY DORI</p>
     </div>
 </header>
 
 
-<div class="test">test</div>
+<div class="introduction_place">
+
+    <div class="main_text">
+    <h2 style="color: dodgerblue">시원하고 편안한 공간 덕동리 208 캠핑장</h2>
+    <p>충북 제천 아무말 아무말 시원하고 편안 아무말 아무말 가로수 그늘 아래<br>
+        아무말 아무말 제천오면 꼭 들려야 하는 캠핑장 아무말<br>
+        아무말 아무말</p>
+    </div>
+
+    <div class="text_a">
+
+    <p style="color: cornflowerblue; font-weight: bolder">소갯말 1번</p>
+    <div style="background-color: #ccc; height: 3px; width: 100%; margin: 0 auto"></div>
+
+    <div class="introduction_img"></div>
+        <p>시원 시원 아무말 아무말</p>
+
+    </div>
+</div>
 
 
 
