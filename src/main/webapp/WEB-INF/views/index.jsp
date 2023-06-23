@@ -54,7 +54,7 @@
     .main-image { /*메인 이미지 공간*/
         position: relative;
         height: 100%;
-        background-image: url("img/main_img_2.png ");
+        background-image: url("img/main_img_1.png");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
@@ -76,29 +76,41 @@
     }
 
     .introduction_place{/*캠핑장 소개 공간*/
-        background-color: antiquewhite;
-        width: 50%;
+        max-width: 1100px;
         margin: 0 auto;
     }
 
-    .main_text{
+    .introduction_text_a{
         text-align: center;
     }
 
-    .introduction_img{
-        background-color: red;
+    .introduction_text_b{
+        width: 100%;
+        float: left;
+    }
 
-        margin-left: 10%;
-        width: 200px;
-        height: 200px;
-        float: left
+    .introduction_img{
+        width: 400px;
+        height: 300px;
+        float: left;
+    }
+
+    .text_b{
+        float: left;
+        margin-left: 40px;
+    }
+
+    .text_place{
+        width: 100%;
+        height: auto;
+        display: inline-block;
     }
 
 
 </style>
 <body>
 
-<header class="main-header">
+<header class="main-header"> <%--헤더 부분--%>
     <nav>
         <ul class="menu">
             <li><a href="">홈</a></li>
@@ -115,24 +127,56 @@
 </header>
 
 
-<div class="introduction_place">
+<div class="introduction_place"><%--소개 부분--%>
 
-    <div class="main_text">
+    <div class="introduction_text_a"><%--텍스트 상단 부분--%>
     <h2 style="color: dodgerblue">시원하고 편안한 공간 덕동리 208 캠핑장</h2>
-    <p>충북 제천 아무말 아무말 시원하고 편안 아무말 아무말 가로수 그늘 아래<br>
+
+    <div>충북 제천 아무말 아무말 시원하고 편안 아무말 아무말 가로수 그늘 아래<br>
         아무말 아무말 제천오면 꼭 들려야 하는 캠핑장 아무말<br>
-        아무말 아무말</p>
-    </div>
-
-    <div class="text_a">
-
-    <p style="color: cornflowerblue; font-weight: bolder">소갯말 1번</p>
-    <div style="background-color: #ccc; height: 3px; width: 100%; margin: 0 auto"></div>
-
-    <div class="introduction_img"></div>
-        <p>시원 시원 아무말 아무말</p>
+        아무말 아무말</div>
 
     </div>
+
+
+    <div class="introduction_text_b"><%--소갯말 부분--%>
+
+        <p style="color: cornflowerblue; font-weight: bolder">소갯말 1번</p>
+        <div style="background-color: #ccc; height: 3px; width: 100%; margin: 0 auto 20px;">
+            <div style="background-color: cornflowerblue; height: 100%; width: 10%; float: left;"></div>
+            <div style="background-color: #ccc; height: 100%; width: 90%; float: left;"></div>
+        </div><%-- 선 --%>
+
+        <div class="text_place">
+        <img class="introduction_img" style="background-color: skyblue">
+        <div class="text_b">
+            <div style="color: dodgerblue; font-weight: bold;">편안한 공간</div>
+            <div>가나다라마바사아자차카타파하</div>
+        </div>
+        </div>
+
+        <p style="color: cornflowerblue; font-weight: bolder">소갯말 2번</p>
+        <div style="background-color: #ccc; height: 3px; width: 100%; margin: 0 auto 20px;">
+            <div style="background-color: cornflowerblue; height: 100%; width: 10%; float: left;"></div>
+            <div style="background-color: #ccc; height: 100%; width: 90%; float: left;"></div>
+        </div><%-- 선 --%>
+
+        <div class="text_place">
+            <img class="introduction_img" style="background-color: skyblue">
+            <div class="text_b">
+                <div style="color: dodgerblue; font-weight: bold;">편안한 공간</div>
+                <div>가나다라마바사아자차카타파하</div>
+            </div>
+        </div>
+
+    </div>
+
+    <img src="img/map.png" style="width: 1100px;"><%--캠핑장 배치도--%>
+
+
+
+
+
 </div>
 
 
