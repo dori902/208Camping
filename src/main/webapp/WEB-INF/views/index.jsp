@@ -18,7 +18,6 @@
     .main-header {
         position: relative;
         height: 700px; /* 메인 이미지 높이 조정 */
-        background-color: green;
     }
 
     .menu {
@@ -55,8 +54,8 @@
     .main-image { /*메인 이미지 공간*/
         position: relative;
         height: 100%;
-        background-image: url("img/main_img_1.jpg");
-        background-size: contain;
+        background-image: url("img/main_img_2.png ");
+        background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
         display: flex;
@@ -65,7 +64,6 @@
         align-items: center;
         text-align: center;
         color: white;/*글자 색*/
-        background-color: red;
     }
 
     .main-image h1 { /*메인 이미지 제목*/
